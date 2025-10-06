@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 // récupérer tous les étudiants
-$sql = "SELECT id, first_name, last_name, email FROM registration"; // ⚠️ la table que tu utilises
+$sql = "SELECT id, first_name, last_name, email FROM registration"; 
 $result = $conn->query($sql);
 
 $students = [];
