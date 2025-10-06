@@ -7,7 +7,7 @@ header("Access-Control-Allow-Methods: GET");
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "students"; // ⚠️ ton nom de base
+$db   = "students"; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 
