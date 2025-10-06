@@ -6,9 +6,9 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 // connexion MySQL
 $host = "localhost";
-$user = "root";         // ⚠️ ton utilisateur
-$pass = "";             // ⚠️ ton mot de passe
-$db   = "students"; // ⚠️ ton nom de base
+$user = "root";         
+$pass = "";            
+$db   = "students"; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 
