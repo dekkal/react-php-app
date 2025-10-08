@@ -25,7 +25,6 @@ $last_name  = $data["last_name"] ?? '';
 $email      = $data["email"] ?? '';
 
 if ($first_name && $last_name && $email) {
-    // requête SQL directe (⚠️ pas sécurisé)
     $sql = "INSERT INTO registration (first_name, last_name, email) 
             VALUES ('$first_name', '$last_name', '$email')";
 
