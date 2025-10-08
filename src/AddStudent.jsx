@@ -13,7 +13,7 @@ function AddStudent() {
 
   const [errors, setErrors] = useState({});
 
-  // ✅ Validation en direct
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -46,7 +46,7 @@ function AddStudent() {
     setErrors(newErrors);
   };
 
-  // ✅ Validation complète avant submit
+
   const validate = () => {
     let newErrors = {};
     if (!student.first_name.trim()) {
@@ -94,7 +94,6 @@ function AddStudent() {
     }
   };
 
-  // ✅ Fonction utilitaire pour déterminer la classe CSS
   const getInputClass = (field) => {
     if (errors[field]) return "form-control is-invalid";
     if (student[field].trim() !== "") return "form-control is-valid";
