@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Content-Type");
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "students"; // nom de ta base
+$db   = "students"; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 
